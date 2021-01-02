@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Londrina Solid", cursive;
+  box-sizing: border-box;
+}
+
+#container {
+  position: relative;
+  margin: 50px auto;
+  width: 1000px;
+  height: 600px;
+  /*border: 1px solid black;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bigbox {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #454352;
+  margin-top: 25px;
+  -webkit-box-shadow: 8px 7px 22px -9px #000000;
+  box-shadow: 8px 7px 22px -9px #000000;
+}
+
+#finish {
+  position: absolute;
+  width: 600px;
+  height: 100px;
+  z-index: 20;
+  background-color: #606060;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+  opacity: 80%;
+  top: 275px;
+  display: none;
+  box-shadow: 8px 7px 22px -9px #000000;
+}
+
+span {
+  text-align: center;
+}
+
+p {
+  bottom: 130px;
+  left: 20px;
+  position: relative;
+  text-align: center;
+}
+
+button {
+  border-radius: 18px;
+  font-size: 2rem;
+  padding: 10px 20px;
+  text-shadow: 0 1px 0 #3359a5;
+  -webkit-box-shadow: 8px 7px 22px -9px #000000;
+  box-shadow: 8px 7px 22px -9px #000000;
+  outline: none;
+  color: #a0a0a0;
+  border: solid 3px #f02146;
+  background-color: #f2395a;
+}
+
+.orgIm {
+  background-image: url(assets/full.jpg);
+}
+
+.pieces {
+  background: #8e2b4e;
+}
+
+button:hover {
+  color: #e7d1c4;
+  background: red;
+  border-color: #c20000;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #dce3e7;
+}
+
+.puzzle {
+  border-color: #dce3e7;
+  width: 302px;
+  height: 302px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.pieces {
+  position: relative;
+  width: 302px;
+  height: 302px;
+}
+
+.pc0,
+.pc1,
+.pc2,
+.pc3,
+.pc4,
+.pc5,
+.pc6,
+.pc7,
+.pc8 {
+  position: absolute;
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+.pc0 {
+  background-image: url(assets/part1.jpg);
+  cursor: pointer;
+}
+
+.pc1 {
+  background-image: url(assets/part2.jpg);
+  cursor: pointer;
+}
+
+.pc2 {
+  background-image: url(assets/part3.jpg);
+  cursor: pointer;
+}
+
+.pc3 {
+  background-image: url(assets/part4.jpg);
+  cursor: pointer;
+}
+
+.pc4 {
+  background-image: url(assets/part5.jpg);
+  cursor: pointer;
+}
+
+.pc5 {
+  background-image: url(assets/part6.jpg);
+  cursor: pointer;
+}
+
+.pc6 {
+  background-image: url(assets/part7.jpg);
+  cursor: pointer;
+}
+
+.pc7 {
+  background-image: url(assets/part8.jpg);
+  cursor: pointer;
+}
+
+.pc8 {
+  background-image: url(assets/part9.jpg);
+  cursor: pointer;
+}
+
+.tinybox-1,
+.tinybox-2 {
+  width: 15px;
+  height: 25px;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  background-color: rgba(232, 236, 241, 0.8);
+  display: none;
+}
+
+.box {
+  /* make tinybox-2 parent relative*/
+  position: relative;
+  background-image: url(assets/white.png);
+  cursor: pointer;
+}
+
+.tinybox-2 {
+  position: absolute;
+  top: 74px;
+}
+
+.displayTinyBox {
+  display: block;
+}
+
+.yellowClass {
+  border-color: yellow;
+}
